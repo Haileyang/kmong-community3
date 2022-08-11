@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+// font-family: 'Noto Sans KR', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+// font-family: 'Roboto', sans-serif;
+$font-notosans: 'Noto Sans KR', sans-serif;
+$font-roboto : 'Roboto', sans-serif;
+
+
+$color-primary: #2D722D;
+$color-lightGrey : #888;
+$color-grey : #444;
+
+
+body, a{
+    font-family: $font-notosans;
+}
+.inr{
+    width: 100%;
+    max-width: 1232px;
+    margin: 0 auto!important;
+    padding: 0 16px;
+    position: relative;
+}
+.hidden{
+    display: none!important;
+}
+.visible{
+    display: block!important;
+}
+.font-bold{
+    font-weight: 700!important;
+}
+.color-primary{
+    color: $color-primary;
+}
+.font-roboto{
+    font-family: $font-roboto ;
+}
+.btn{
+    background-color: $color-primary;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    padding: 12px 20px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0;
+    &::after{
+        content:"";
+        width: 24px;height: 24px;
+        background: url(/public/img/icon-more.png) no-repeat center / 24px;
+        display: inline-block;
+        margin-left: 50px;
+        position: relative;
+        transition: all 0.3s;
+        left: 0;
+    }
+    &:hover{
+        a{
+            color: #fff;
+        }
+        &::after{
+            left: 10px;
+        }
+    }
+}
+
+// HEADER
+
+@media(max-width: 778px){
+   
+}
