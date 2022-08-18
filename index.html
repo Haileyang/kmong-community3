@@ -11,6 +11,12 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- animation -->
+    <link href="/public/lib/animation/animate.css" rel="stylesheet" />
+    <script src="/public/lib/animation/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
     <!-- custom -->
     <link rel="stylesheet" href="/public/css/app.css">
@@ -42,31 +48,74 @@
                 <span class="btn fill">
                     <a href="">로그인</a>
                 </span>
+                <span class="mobile-btn" onclick="mobileMenuOpen()">
+                   <img src="/public/img/icon-hamberger.png" alt="모바일 메뉴">
+                </span>
+            </div>
+        </div>
+        <div class="mobile-menu-wrap">
+            <div class="mobile-profile">
+                <figure class="profile-img"><img src="/public/img/profile-default.png" alt="프로필"></figure>
+                <span>
+                   <small>반갑습니다.</small>
+                   <strong>홍길동</strong>회원님
+                </span>
+                <figure class="profile-more"><img src="/public/img/icon-arrow.png" alt="icon-arrow"></figure>
+            </div>
+            <div>
+                <div class="current-price">
+                    <span>보유금액</span>
+                    <span class="price-amount">
+                        90,000,000
+                        <small>원</small>
+                    </span>
+                </div>
+                <ul class="mobile-menus">
+                    <li class="mobile-menu">
+                        <figure><img src="/public/img/icon-menu-01.png" alt="거래하기"></figure>
+                        거래하기
+                    </li>
+                    <li class="mobile-menu">
+                        <figure><img src="/public/img/icon-menu-02.png" alt="입금신청"></figure>
+                        입금신청
+                    </li>
+                    <li class="mobile-menu">
+                        <figure><img src="/public/img/icon-menu-03.png" alt="출금신청"></figure>
+                        출금신청
+                    </li>
+                </ul>
+            </div>
+            <div class="mobile-menu-bottom">
+                <ul class="mobile-sub-menus">
+                    <li class="mobile-sub-menu">고객센터</li>
+                    <li class="mobile-sub-menu">이용약관</li>
+                </ul>
+                <span class="logout"><a href="">로그아웃</a></span>
             </div>
         </div>
     </header>
     <main id="main">
         <section class="section" id="main-visual">
             <div class="inr">
-                <h1>차익거래는 어떤 장점이 있을까요?</h1>
-                <p>
+                <h1 class="wow slideInUp_short" >차익거래는 <br class="pc-hidden">어떤 장점이 있을까요?</h1>
+                <p class="wow slideInUp_short">
                     Name Investment 에서는 신뢰할 수 있는 투명하고 
                    <br> 안전한 거래 서비스를 제공합니다.
                 </p>
-                <span class="btn line">
+                <span class="btn line wow slideInUp_short">
                     <a href="">바로가기</a>
                 </span>
             </div>
         </section>
         <section class="section main-about">
             <div class="inr">
-                <div class="section-tit">
+                <div class="section-tit wow slideInUp_short">
                     <h2>About BitCoin</h2>
                     <p>bitcoin.com 은 신뢰할 수 있는 투명하고 안전한 거래 서비스를 제공하는 기업입니다.</p>
                     <span class="deco"></span>
                 </div>
                 <div class="about-content">
-                    <div class="about-left">
+                    <div class="about-left wow slideInUp_short">
                         <figure><img src="/public/img/img-about.jpg" alt="picture sample"></figure>
                         <span class="more">
                             <a href="">VIEW MORE</a>
@@ -111,14 +160,15 @@
         </section>
         <section class="section main-benefit">
             <div class="inr">
-                <div class="section-tit">
+                <div class="section-tit wow slideInUp_short">
                     <h2>특화된 디지털 자산 거래</h2>
                     <p>bitcoin.com 은 신뢰할 수 있는 투명하고 안전한 거래 서비스를 제공하는 기업입니다.</p>
                     <span class="deco"></span>
                 </div>
                 <ul class="benefit-lists">
-                    <li class="benefit-list">
-                        <figure><img src="/public/img/img-benefit-sample.jpg" alt="sampple image"></figure>
+                    <li class="benefit-list wow slideInUp_short">
+                        <figure class="mobile-hidden"><img src="/public/img/img-benefit-sample.jpg" alt="sampple image"></figure>
+                        <figure class="pc-hidden"><img src="/public/img/img-benefit-sample-mb.jpg" alt="sampple image"></figure>
                         <dl>
                             <dt>재택 근무 가능</dt>
                             <dd>
@@ -126,8 +176,9 @@
                             </dd>
                         </dl>
                     </li>
-                    <li class="benefit-list">
-                        <figure><img src="/public/img/img-benefit-sample.jpg" alt="sampple image"></figure>
+                    <li class="benefit-list wow slideInUp_short">
+                        <figure class="mobile-hidden"><img src="/public/img/img-benefit-sample.jpg" alt="sampple image"></figure>
+                        <figure class="pc-hidden"><img src="/public/img/img-benefit-sample-mb.jpg" alt="sampple image"></figure>
                         <dl>
                             <dt>재택 근무 가능</dt>
                             <dd>
@@ -135,8 +186,9 @@
                             </dd>
                         </dl>
                     </li>
-                    <li class="benefit-list">
-                        <figure><img src="/public/img/img-benefit-sample.jpg" alt="sampple image"></figure>
+                    <li class="benefit-list wow slideInUp_short">
+                        <figure class="mobile-hidden"><img src="/public/img/img-benefit-sample.jpg" alt="sampple image"></figure>
+                        <figure class="pc-hidden"><img src="/public/img/img-benefit-sample-mb.jpg" alt="sampple image"></figure>
                         <dl>
                             <dt>재택 근무 가능</dt>
                             <dd>
@@ -144,8 +196,9 @@
                             </dd>
                         </dl>
                     </li>
-                    <li class="benefit-list">
-                        <figure><img src="/public/img/img-benefit-sample.jpg" alt="sampple image"></figure>
+                    <li class="benefit-list wow slideInUp_short">
+                        <figure class="mobile-hidden"><img src="/public/img/img-benefit-sample.jpg" alt="sampple image"></figure>
+                        <figure class="pc-hidden"><img src="/public/img/img-benefit-sample-mb.jpg" alt="sampple image"></figure>
                         <dl>
                             <dt>재택 근무 가능</dt>
                             <dd>
@@ -156,25 +209,25 @@
                 </ul>
             </div>
         </section>
-        <section class="section main-counter">
+        <section class="section main-counter" onscroll="counterAnimationHandler()">
             <div class="inr">
                 <ul class="counter-lists">
                     <li class="counter-list">
-                        <strong class="counter-num">35</strong>
+                        <strong class="counter-num"  data-target="35">35</strong>
                         <small>
                             35라인의 특화된 
                             <br>디지털 자산 거래
                         </small>
                     </li>
                     <li class="counter-list">
-                        <strong class="counter-num">250</strong>
+                        <strong class="counter-num"  data-target="250">250</strong>
                         <small>
                             250라인의 특화된 
                             <br>디지털 자산 거래
                         </small>
                     </li>
                     <li class="counter-list">
-                        <strong class="counter-num">650</strong>
+                        <strong class="counter-num"  data-target="650">650</strong>
                         <small>
                             650라인의 특화된 
                             <br>디지털 자산 거래
@@ -185,13 +238,13 @@
         </section>
         <section class="section main-certificate">
             <div class="inr">
-                <div class="section-tit">
+                <div class="section-tit wow slideInUp_short">
                     <h2>국제 표준 및 국내 주요 보안 인증 획득</h2>
                     <p>bitcoin.com 은 신뢰할 수 있는 투명하고 안전한 거래 서비스를 제공하는 기업입니다.</p>
                     <span class="deco"></span>
                 </div>
                 <ul class="certificate-lists">
-                    <li class="certificate-list">
+                    <li class="certificate-list wow slideInUp_short">
                         <figure><img src="/public/img/img-certificate-sample.jpg" alt="sampple image"></figure>
                         <dl>
                             <dt>한국인터넷 진흥원</dt>
@@ -200,7 +253,7 @@
                             </dd>
                         </dl>
                     </li>
-                    <li class="certificate-list">
+                    <li class="certificate-list wow slideInUp_short">
                         <figure><img src="/public/img/img-certificate-sample.jpg" alt="sampple image"></figure>
                         <dl>
                             <dt>한국인터넷 진흥원</dt>
@@ -216,8 +269,8 @@
         <section class="section main-banner">
             <div class="inr">
                 <dl>
-                    <dt>Implementation</dt>
-                    <dd>Lorem Ipsum is simply dummy text of the printing and  typesetting<br>
+                    <dt class="wow slideInUp_short">Implementation</dt>
+                    <dd class="wow slideInUp_short">Lorem Ipsum is simply dummy text of the printing and  typesetting<br>
                         Lorem Ipsum is simply dummy text of the printing and  typesetting industry.</dd>
                 </dl>
                 <span class="btn line">
