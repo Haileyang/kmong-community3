@@ -198,12 +198,14 @@ header{
         .mobile-menus{
             padding: 35px 16px 50px ;
             .mobile-menu{
-                padding-bottom: 15px;
-                margin-bottom: 15px;
-                font-size: 18px;
-                display: flex;
-                align-items: center;
-                border-bottom: 1px solid #eee;
+                a{
+                    padding-bottom: 15px;
+                    margin-bottom: 15px;
+                    font-size: 18px;
+                    display: flex;
+                    align-items: center;
+                    border-bottom: 1px solid #eee;
+                }
                 figure{
                     margin-right: 10px;
                 }

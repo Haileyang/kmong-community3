@@ -260,7 +260,7 @@ header .mobile-menu-wrap .current-price .price-amount small {
 header .mobile-menu-wrap .mobile-menus {
   padding: 35px 16px 50px;
 }
-header .mobile-menu-wrap .mobile-menus .mobile-menu {
+header .mobile-menu-wrap .mobile-menus .mobile-menu a {
   padding-bottom: 15px;
   margin-bottom: 15px;
   font-size: 18px;
